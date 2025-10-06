@@ -55,7 +55,21 @@ nav ul li a {
 /* Media Queries */
 
 /* Móvil: 0 - 600px */
-
+@media (max-width: 600px) {
+    .contenido {
+        flex-direction: column;
+    }
+    .columna {
+        background-color: #e6f7ff;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
 
 /* Tablet: 601px - 900px */
 @media (min-width: 601px) and (max-width: 900px) {
