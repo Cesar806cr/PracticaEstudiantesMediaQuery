@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+.columna {
+    background-color: #f2f2f2;
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.columna img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+
+
+
+/* Tablet: 601px - 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .contenido {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .columna {
+        flex: 1 1 45%;
+        background-color: #fff2e6;
+    }
+    header h1 {
+        font-size: 22px;
+    }
+}
+
+/* Escritorio: más de 900px */
+@media (min-width: 901px) {
+    .contenido {
+        flex-direction: row;
+    }
+    .columna {
+        flex: 1;
+        background-color: #f2f2f2;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+}
+
